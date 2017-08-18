@@ -1,28 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <hello></hello>
+    <appHeader></appHeader>
+    <div class="header">
+      I am header
+    </div>
+    <div class="tab">
+      I am tab
+    </div>
+    <div class="content">
+      I am content
+    </div>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello'
+  import appHeader from './components/header/header';
 
-export default {
-  name: 'app',
-  components: {
-    Hello
-  }
-}
+  export default {
+      components: {
+          appHeader
+      }
+  };
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
